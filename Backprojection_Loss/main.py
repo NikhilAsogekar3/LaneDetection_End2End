@@ -17,13 +17,13 @@ import json
 from tqdm import tqdm
 import matplotlib.pyplot as plt
 
-from Dataloader.Load_Data_new import get_loader, get_testloader, \
+from Load_Data_new import get_loader, get_testloader, \
                                      load_valid_set_file_all 
                                     
 # from eval_lane import LaneEval
 from Loss_crit import define_loss_crit, polynomial 
-from Networks.LSQ_layer import Net
-from Networks.utils import define_args, save_weightmap, first_run, \
+from LSQ_layer import Net
+from utils import define_args, save_weightmap, first_run, \
                            mkdir_if_missing, Logger, define_init_weights,\
                            define_scheduler, define_optim, AverageMeter
 from test import test_model

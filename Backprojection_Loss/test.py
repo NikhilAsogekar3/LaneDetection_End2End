@@ -14,7 +14,7 @@ import os
 import json
 import cv2
 from PIL import Image
-from Networks.utils import AverageMeter
+from utils import AverageMeter
 import time
 
 def resize_coordinates(array):
